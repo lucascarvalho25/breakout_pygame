@@ -131,8 +131,8 @@ class Ball:
         self.reset_ball_speed()
 
     def reset_ball_speed(self):
-        self.x_speed = 0.6
-        self.y_speed = -0.6
+        self.x_speed = 1
+        self.y_speed = -1
         self.current_speed_level = 1 #Resetar o nível de velocidade ao reiniciar a bola
 
     def adjust_speed(self, brick_points):
