@@ -34,7 +34,7 @@ ball = Ball(
     initial_ball_position[0],
     initial_ball_position[1],
     7,
-    initial_speed=0.6,
+    initial_speed=1,
     racket=racket
 )
 
@@ -97,6 +97,7 @@ def reset_game():
         initial_speed=0.6,
         racket=racket
     )
+
 
 flag = True
 while flag and lives > 0:
