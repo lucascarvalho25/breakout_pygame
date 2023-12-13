@@ -12,7 +12,7 @@ class Ball:
         self.racket = racket
         self.lost = False
         self.score = 0
-        self.current_speed_level = 1  # Nível inicial de velocidade
+        self.current_speed_level = 0.6  # Nível inicial de velocidade
         self.hits_on_racket = 0
 
 
@@ -131,8 +131,8 @@ class Ball:
         self.reset_ball_speed()
 
     def reset_ball_speed(self):
-        self.x_speed = 1
-        self.y_speed = -1
+        self.x_speed = 0.6
+        self.y_speed = -0.6
         self.current_speed_level = 1 #Resetar o nível de velocidade ao reiniciar a bola
 
     def adjust_speed(self, brick_points):
